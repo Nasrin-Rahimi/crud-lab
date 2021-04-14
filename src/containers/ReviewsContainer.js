@@ -11,7 +11,7 @@ class ReviewsContainer extends Component {
         <ReviewInput addReview={this.props.addReview}  />
         <Reviews 
           reviews={this.props.reviews}
-          restaurantId={this.props.restaurant.id}
+          restaurantId={this.props.restaurantId}
           deleteReview={this.props.deleteReview} 
         />
       </div>
@@ -19,7 +19,8 @@ class ReviewsContainer extends Component {
   }
 }
 
-const mapStateToProps = ({ reviews }) => {
+const mapStateToProps = ({reviews}) => {
+
   return { reviews }
 }
 
